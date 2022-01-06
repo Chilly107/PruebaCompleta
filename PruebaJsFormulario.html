@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="col-lg-8 form-inner-cont">
+        <form name="formulario" action="" method="get" class="signin-form" onsubmit="return validacion()">
+            <div class="form-grids">
+                <div class="form-input">
+                    <input type="text" name="nombre" id="lName" placeholder="Enter your name *" />
+                </div>
+                <div class="form-input">
+                    <input type="text" name="subject" id="lSubject" placeholder="Enter subject " />
+                </div>
+                <div class="form-input">
+                    <input type="email" name="sender" id="lSender" placeholder="Enter your email *"/>
+                </div>
+                <div class="form-input">
+                    <input type="text" name="phone" id="lPhone" placeholder="Enter your Phone Number *"/>
+                </div>
+            </div>
+            <div class="form-input">
+                <textarea name="lMessage" id="1Message" placeholder="Type your query here"></textarea>
+            </div>
+            <div class="text-right">
+                <button id="btn" class="btn btn-style btn-primary">Submit Now</button>
+            </div>
+        </form>
+    </div>
+<script>
+   
+   function validacion() {
+  if (formulario.nombre.value == 0) {
+    
+    alert('[ERROR] El campo debe tener un valor');
+    return false;
+  }
+  else if (formulario.subject.value == 0) {
+   
+    alert('[ERROR] El campo debe tener un valor');
+    return false;
+  }
+  
+  else if (formulario.sender.value == 0) {
+   
+    alert('[ERROR] El campo debe tener un valor');
+    return false;
+  }
+
+  else if (formulario.phone.value == 0) {
+   
+   alert('[ERROR] El campo debe tener un valor');
+   return false;
+ }
+
+
+  return true;
+}
+       
+
+
+
+       
+</script>
+
+</body>
+</html>
